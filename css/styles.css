@@ -716,7 +716,6 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal-check-label {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     font-size: 12px;
     line-height: 1.16667;
@@ -869,6 +868,13 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+}
+
+.address-link-tel {
+    color: #4d5ae5;
+}
+
+.address-link-email {
     color: #434455;
 }
 
@@ -928,6 +934,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         display: flex;
         flex-wrap: wrap;
         gap: 12px;
+        align-items: center;
     }
 
     .address-link {
@@ -1042,6 +1049,12 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .modal-check-label {
         flex-wrap: nowrap;
     }
+
+    .mob-menu.is-open {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
 }
 
 
@@ -1062,6 +1075,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     .address-list {
         flex-wrap: nowrap;
+        align-items: baseline;
         gap: 40px;
     }
 
